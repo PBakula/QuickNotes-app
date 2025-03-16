@@ -1,0 +1,99 @@
+/* Custom overrides for maintaining app design while using Bootstrap */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.card {
+  height: 200px !important;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Card hover effect same as original */
+.card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Override bootstrap's default button color to match original */
+.btn-secondary {
+  background-color: #cdcdcde9;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #bebebe;
+  color: black;
+}
+
+/* Maintain selected color circle design */
+.rounded-circle {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  transition: transform 0.2s;
+}
+
+.rounded-circle:hover {
+  transform: scale(1.1);
+}
+
+/* Special link style from original */
+.hl {
+  color: rgb(154, 154, 154);
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.5em;
+  margin-left: -0.5em;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.hl:before,
+.hl:after {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid rgb(117, 120, 123);
+  border-radius: 1em;
+  bottom: 0.3em;
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hl:before {
+  width: 1em;
+  transform-origin: left;
+}
+
+.hl:after {
+  width: 82%;
+  left: 1em;
+  transform: translateX(110%);
+}
+
+.hl:hover:before {
+  transform: scaleX(0.3);
+}
+
+.hl:hover:hover:after {
+  transform: translateX(0);
+}

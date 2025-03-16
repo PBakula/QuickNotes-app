@@ -1,0 +1,15 @@
+# Ignoriraj sve .env datoteke u projektu
+.env
+server/.env
+client/.env
+
+# Node modules (dependencies)
+node_modules/
+
+# Build output
+/build
+/dist
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
