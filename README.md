@@ -2,6 +2,11 @@
 
 Aplikacija za upravljanje bilješkama s Google OAuth autentikacijom, razvijena u TypeScript-u s React frontend-om i Node.js/Express backend-om.
 
+![Screenshot 2025-03-18 at 14 50 47](https://github.com/user-attachments/assets/db528bef-4262-4daa-936a-6b5980ea7dd0)
+![Screenshot 2025-03-18 at 12 49 22](https://github.com/user-attachments/assets/bf584651-0aea-4676-a545-cc0ecfb4ea44)
+![Screenshot 2025-03-18 at 14 52 25](https://github.com/user-attachments/assets/3a700225-ba0c-4ccf-a97c-c27e7d577664)
+
+
 ## Sadržaj
 
 - [Funkcionalnosti](#funkcionalnosti)
@@ -15,7 +20,6 @@ Aplikacija za upravljanje bilješkama s Google OAuth autentikacijom, razvijena u
 - [Struktura projekta](#struktura-projekta)
 - [API endpoints](#api-endpoints)
 - [Autentikacija](#autentikacija)
-- [Upravljanje bilješkama](#upravljanje-bilješkama)
 
 ## Funkcionalnosti
 
@@ -171,22 +175,4 @@ Aplikacija koristi Google OAuth 2.0 za autentikaciju korisnika. Za implementacij
 3. Nakon uspješne autentikacije, Google preusmjerava korisnika natrag na aplikaciju
 4. Aplikacija stvara sesiju za korisnika
 5. Korisnik se preusmjerava na stranicu s bilješkama
-
-## Upravljanje bilješkama
-
-### Kreiranje bilješke
-
-Korisnik može stvoriti novu bilješku s naslovom, sadržajem i odabranom bojom pozadine.
-
-### Uređivanje bilješke
-
-Korisnik može urediti postojeću bilješku, uključujući naslov, sadržaj i boju pozadine.
-
-### Brisanje bilješke
-
-Korisnik može izbrisati bilješku klikom na gumb za brisanje.
-
-### Filtriranje bilješki
-
-Korisnik može filtrirati bilješke prema bojama za lakše pronalaženje.
 
